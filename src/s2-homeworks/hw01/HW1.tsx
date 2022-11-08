@@ -6,25 +6,37 @@ import FriendMessage from './friend-message/FriendMessage'
 import avatar from './avatar.png'
 
 /*
-* 1 - описать тип MessageType
-* 2 - описать тип MessagePropsType в файле Message.tsx
-* 3 - в файле Message.tsx отобразить приходящие данные
+* 1 - описать тип MessageType +
+* 2 - описать тип MessagePropsType в файле Message.tsx +
+* 3 - в файле Message.tsx отобразить приходящие данные +
 * 4 - выполнить пункты 2, 3 в файле FriendMessage.tsx
 * 5 - сделать стили в соответствии с дизайном
 * */
 
 // нужно создать правильный тип вместо any
-export type MessageType = any
+export type MessageType = {
+    id:number;
+    user: UserInfoType
+    message: MessageObjType
+}
+type UserInfoType = {
+    avatar: string;
+    name: string;
+}
+type MessageObjType = {
+    text: string;
+    time: string;
+}
 
 // структуру объекта не менять
 export const message0: MessageType = {
     id: 0,
     user: {
         avatar: avatar, // можно менять
-        name: 'Some Name',  // можно менять
+        name: 'Brad',  // можно менять
     },
     message: {
-        text: 'some textsome textsome textsome textsome textsome textsome text', // можно менять
+        text: 'Уи́льям Брэ́дли Питт (англ. William Bradley Pitt; род. 18 декабря 1963, Шони, Оклахома, США)', // можно менять
         time: '22:00', // можно менять
     },
 }
