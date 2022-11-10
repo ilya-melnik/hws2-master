@@ -1,3 +1,5 @@
+/*Все что добавляю удаляет со страницы*/
+
 .friendMessage {
 
 }
@@ -7,6 +9,7 @@
 }
 
 .friendImageAndText img {
+    /*position: absolute;*/
 
 }
 
