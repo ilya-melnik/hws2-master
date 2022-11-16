@@ -1,4 +1,5 @@
 .sendForm {
+    position: relative;
     width: 976px;
     height: 40px;
     left: 70px;
@@ -10,8 +11,8 @@
 }
 
 .textarea {
-
-    width: 976px;
+/*position: relative;*/
+    width: 855px;
     height: 40px;
     left: 70px;
     top: 408px;
@@ -23,12 +24,9 @@
 }
 
 .button {
-
+    position: relative;
     width: 120px;
     height: 40px;
-    left: 1090px;
-    top: 408px;
-
     background: #0066CC;
     border-radius: 20px;
 }
