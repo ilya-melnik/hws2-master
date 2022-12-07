@@ -1,5 +1,5 @@
 .message {
-    position: relative;
+    /*position: relative;*/
     width: 570px;
     height: 77px;
     left: 635px;
@@ -13,7 +13,7 @@
 }
 
 .imageAndText img {
-    position: relative;
+    /*position: relative;*/
     /*align-self: flex-end;*/
     width: 48px;
     height: 48px;
@@ -22,17 +22,17 @@
 }
 
 .text {
-position: relative;
+/*position: relative;*/
 }
 
 .text:after {
-position: relative;
+/*position: relative;*/
 }
 
 .name {
     /*display: flex;*/
     /*flex-direction: row-reverse;*/
-position: relative;
+/*position: relative;*/
     top: 23px;
     left: 473px;
     font-family: 'Montserrat';
