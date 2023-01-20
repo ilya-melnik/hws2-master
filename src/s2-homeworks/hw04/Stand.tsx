@@ -23,10 +23,18 @@ const Stand = () => {
                 </div>
                 {/*инпут с ошибкой:*/}
                 <div>
+{/*//-------------------------------------------------------------------------------------*/}
                     <SuperInputText
                         id={'hw4-super-input-with-error'}
                         value={stateForAllInputs}
-                        onChangeText={setValue}
+                        onChangeText={value => {
+                            setValue(value)
+                            setError(
+                                stateForAllInputs.trim()
+                                    ? ''
+                                    : 'Error'
+                            )
+                        }}
                         error={error}
                         onEnter={() => {
                             setError(
@@ -40,10 +48,11 @@ const Stand = () => {
                 </div>
             </div>
 
+
             <div className={s.buttons}>
                 {/*обычная кнопка:*/}
                 <div>
-                    <SuperButton id={'hw4-super-button-default'}>
+                    <SuperButton id={'hw4-super-button-default'} className={'1'}>
                         default
                     </SuperButton>
                 </div>

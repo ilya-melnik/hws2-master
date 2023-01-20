@@ -6,7 +6,7 @@ import HW4 from '../../hw04/HW4'
 
 function PreJunior() {
     return (
-        <div id={'hw5-page-pre-junior'}>
+        <div id={'hw5-page-pre-junior'} style={{width: '100%'}}>
             {/*pre junior page*/}
             <HW1 />
             <HW2 />

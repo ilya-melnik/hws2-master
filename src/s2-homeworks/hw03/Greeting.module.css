@@ -4,21 +4,37 @@
 
 
 .inputAndButtonContainer {
+
 }
 
 .error {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #cc0000;
+
+
 }
 
 .input {
+    border: 1px solid #CC0000;
+    border-radius: 5px;
+
 }
 
 .input:focus {
+
 }
 
 .errorInput {
+    border: 1px solid red;
+    outline: none;
 }
 
 .button {
+
 }
 
 .button:focus {
@@ -31,6 +47,11 @@
 }
 
 .text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
 }
 
 .greeting {
